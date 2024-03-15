@@ -91,8 +91,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  int port[] = {GPIOC, GPIOC, GPIOC, GPIOC, GPIOE, GPIOD, GPIOE, GPIOE};
-  int pin[] = {6, 7, 8, 9, 4, 3, 5, 6};
+  GPIO_TypeDef* port[] = {GPIOC, GPIOC, GPIOC, GPIOC, GPIOE, GPIOD, GPIOE, GPIOE};
+  uint16_t pin[] = {6, 7, 8, 9, 4, 3, 5, 6};
   while (1)
   {
 	  int i = 0;
